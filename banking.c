@@ -21,7 +21,7 @@ void createAccount() {
 
     fwrite(&acc, sizeof(acc), 1, fp);
     fclose(fp);
-    printf("Account created successfully!\n");
+    printf("Account created successfully!");
 }
 
 void displayAccounts() {
@@ -33,7 +33,7 @@ void displayAccounts() {
         printf("Account No: %d\n", acc.accNo);
         printf("Name: %s\n", acc.name);
         printf("Balance: %.2f\n", acc.balance);
-        printf("----------------------\n");
+        printf("--------------------\n");
     }
 
     fclose(fp);
@@ -153,3 +153,4 @@ int main() {
 
     return 0;
 }
+
